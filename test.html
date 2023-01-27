@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <input list="browsers" placeholder="select a theatre" id="i">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist> 
+      </form>
+      <button onclick="getOption()"> Check option </button>
+      <p id="demo"></p>
+      <script>
+            function getOption() {
+            selectElement = document.querySelector('#i');
+            output = selectElement.value;
+            document.querySelector('#demo').textContent = output;
+            }
+            // ans=document.getElementById("i").value;
+        // document.getElementById("demo").innerHTML=ans;
+      </script>
+</body>
+</html>
