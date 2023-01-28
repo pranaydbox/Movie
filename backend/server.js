@@ -19,10 +19,26 @@ app.post("/:id",function(req,res)
     id=req.params.id;
    
 })
-app.get('/enquiry',function(req1,res1){
-    console.log(data[id])
-    res1.send(data[id]);
+app.get('/enquiry',function(req,res){
+    // console.log(data[id])
+    res.send(data[id]);
 })
+
+
+// user signup details
+var users=require('./user.json');
+app.post('/user',function(req,res){
+    users.push(req.body);
+    fs.writeFile("user.json", users, 'utf8', function (err) {
+        if (err) {
+            console.log("An error occured while writing JSON Object to File.");
+            return console.log(err);
+        }
+        else console.log("written");
+    })
+    // res.send("post req called "+req.body);
+})
+
 
 app.listen(3001);
 console.log("server listening at 3001");
