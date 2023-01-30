@@ -1,1 +1,18 @@
-[]
+{
+  "pranay@gmail.com": {
+    "fname": "pranay",
+    "lname": "kumar",
+    "uname": "pranay",
+    "pass": "123",
+    "mobile": "08402702809",
+    "email": "pranay@gmail.com"
+  },
+  "pavan@gmail.com": {
+    "fname": "pavan",
+    "lname": "kumar",
+    "uname": "pavan",
+    "pass": "123",
+    "mobile": "989702809",
+    "email": "pavan@gmail.com"
+  }
+}

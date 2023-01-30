@@ -29,11 +29,14 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">				
 			<link rel="stylesheet" href="css/main.css">
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 		</head>
 		<body>	
 			<header id="header">
 				<div class="header-top">
-					<div class="container">
+					<div class="container-fluid">
 			  		<div class="row align-items-center">
 			  			<div class="col-lg-6 col-sm-6 col-6 header-top-left">
 			  				<ul>
@@ -52,14 +55,14 @@
 			  		</div>			  					
 					</div>
 				</div>
-				<div class="container main-menu">
+				<div class="container-fluid main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo" >
 				        <a href="index.html" style="font-size: 30px;font-weight: bold; color: whitesmoke;">Movieflix</a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="index.html">Home</a></li>
+				          <li ><a href="index.html">Home</a></li>
 				          <li><a href="about.html">About</a></li>
 				          <li><a href="packages.html">Movies</a></li>
 				          <li><a href="hotels.html">Theatres</a></li>
@@ -82,7 +85,10 @@
 				            </ul>
 				          </li>					          					          		           -->
 				          <li><a href="contact.html">Contact</a></li>
-						  <li><a href="register.html">Login/Register</a></li>
+						  <li class="nav-item" id="admin" style="display: none;"><a href="admin.html">AdminAcess</a></li>
+						  <li id="register"><a href="register.html">Login/Register</a></li>
+						  <li class="nav-item" id="profile" style="display: none;font-size: 13px;color: white;font-weight: bolder;"><a href="profile.html"></a></li>
+						  <li class="nav-item" id="logout" style="display: none;"><a href="contact.html">Logout</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
@@ -733,7 +739,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</footer>
 			<!-- End footer Area -->	
-
+			<script src="myjs/index.js"></script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			

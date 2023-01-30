@@ -19,7 +19,7 @@ function getid(i)
     }
 
     var x1=new XMLHttpRequest();
-    x1.open("POST","http://127.0.0.1:3001/"+i);
+    x1.open("POST","http://127.0.0.1:3001/service/"+i);
         x1.setRequestHeader("content-type","application/json");
     x1.send(JSON.stringify(obj));
     x1.onload=function()
