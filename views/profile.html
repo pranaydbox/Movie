@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>MovieFlix</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+        CSS
+        ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        ::placeholder {
+            color: white;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid white;
+            border-collapse: collapse;
+
+        }
+
+        tr,
+        td {
+            padding: 17.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-6 col-6 header-top-left">
+                        <ul>
+                            <li><a href="#">Visit Us</a></li>
+                            <li><a href="#">Buy Tickets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-6 header-top-right">
+                        <div class="header-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid main-menu">
+            <div class="row align-items-center justify-content-between d-flex">
+                <div id="logo">
+                    <a href="index.html"
+                        style="color: white;text-decoration: none;font-size: 30px;font-weight: bold;">MovieFlix</a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="theatres.html">Theatres</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li id="regButton"><a href="register.html">Register</a></li>
+                        <li id="adminButton"><a href="admin.html">Admin</a></li>
+                        <li id="theatreButton"><a href="theatreOwner.html">Theatre Access</a></li>
+                        <li class="menu-has-children" id="profileButtonMain"><a href="">Hello user!</a>
+                            <ul>
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="" id="lgout">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </div>
+        <section style="display:visible;" id="profilesection">
+            <div class="container-fluid">
+                <div class="row"
+                    style="display: flex;flex-direction: row;justify-content: center;align-items: center;gap: 20px;margin-top: 20px;">
+                    <div class="col-lg-3"
+                        style="display: flex;flex-direction: column;justify-content: center;align-items: center;background-color:black;padding: 0px;margin: 0px;border-radius:20px;width: 400px;box-shadow:2px 1px 10px 1px grey;">
+                        <div
+                            style="display: flex;flex-direction: column;justify-content:center;align-items:center;background-color: black;width:100%;padding: 20px;;border-top-left-radius: 20px;border-top-right-radius:20px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <img style="width: 16rem;height:16rem;border-radius: 50%;" id="profilepictureimage"
+                                    src="img/myimgs/intialuser.jpg">
+                                <div style="transform: translate(180px,-55px);">
+                                    <label class="fa fa-camera"
+                                        style="font-size: 25px;color: white;padding:10px;border-radius:50%;cursor: pointer;background-color:black;"
+                                        id="uploadprofile"><input type="file" id="profilepic"style="display: none;">
+                                        </label>
+                                </div>
+                            </div>
+                            <div style="font-size: 30px;font-weight: 800;margin-top:-20px;" id="nameunderpic"></div>
+                        </div>
+                        <div
+                            style="display: flex;flex-direction: column;justify-content:center;align-items: center;padding: 0px;width:100%;margin: 0px;">
+                            <div class="editicon"
+                                style="padding: 10px;width: 100%;text-align:center;border-top:1px solid white;font-size:18px;font-weight: 500;cursor: pointer;">
+                                Edit Profile</div>
+                            <div data-toggle="modal" data-target="#yourbookingsmodel"
+                                style="padding: 10px;width: 100%;text-align:center;border-top:1px solid white;font-size:18px;font-weight: 500;cursor: pointer;">
+                                Your Bookings</div>
+                            <div
+                                style="padding: 10px;width: 100%;text-align:center;border-top:1px solid white;font-size:18px;font-weight: 500;cursor: pointer;">
+                                Help & Support</div>
+                            <div id="signout"
+                                style="padding: 10px;width: 100%;text-align:center;border-top:1px solid white;border-bottom:1px solid white;border-bottom-left-radius: 20px;border-bottom-right-radius:20px;font-size:18px;font-weight: 500;cursor: pointer;">
+                                Sign Out</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7"
+                        style="display: flex;flex-direction: column;justify-content: center;align-items: center;background-color:black;box-shadow:2px 1px 10px 2px grey;color: white;border-radius: 20px;width: 400px;gap:20px;padding: 30px;">
+                        <div style="font-size:30px;font-weight: 800;width: 100%;" class="row">
+                            <div class="col-lg-11" style="text-align: center;">Personal Details</div>
+                            <i class="fa fa-edit col-lg-1 editicon" style="cursor: pointer;"></i>
+                        </div>
+                        <table
+                            style="display: flex;flex-direction: column;justify-content: center;align-items: center;color: white;">
+                            <tr class="userdetail" style="width: 400px;">
+                                <td style="width:300px">Name:</td>
+                                <td style="width:600px" id="personname"></td>
+                            </tr>
+                            <tr class="userdetail" style="width: 400px;">
+                                <td style="width:300px">Email:</td>
+                                <td style="width:600px" id="personemail"></td>
+                            </tr>
+                            <tr class="userdetail" style="width: 400px;">
+                                <td style="width:300px">Mobile:</td>
+                                <td style="width:600px" id="personmobile"></td>
+                            </tr>
+                            <tr class="userdetail" style="width: 400px;">
+                                <td style="width:300px">Date Of Birth:</td>
+                                <td style="width:600px" id="persondob"></td>
+                            </tr>
+                            <tr class="userdetail" style="width: 400px;">
+                                <td style="width:300px">Age</td>
+                                <td style="width:600px" id="personage"></td>
+                            </tr>
+                            <tr class="userdetail" style="width: 400px;">
+                                <td style="width:300px">Gender:</td>
+                                <td style="width:600px" id="persongender"></td>
+                            </tr>
+                            <tr class="userdetail" style="width: 100%;">
+                                <td style="width:300px">Address:</td>
+                                <td style="width:600px" id="personaddress"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <div id="editsection" style="display: none;box-shadow:2px 1px 10px 2px grey;width:50%;margin-top:20px;" class="container">
+            <div
+                style="display: flex;flex-direction: column;justify-content: center;align-items: center;gap:20px;background-color: black;padding:40px;">
+                <h1>Edit Your Details</h1>
+                <input id="editname" style="color: white;border:1px solid white;width:80%;padding:8px;border-radius:10px;background-color: black;" type="text"
+                    placeholder="Your name">
+                <input id="editmobile" style="color: white;border:1px solid white;width:80%;padding:8px;border-radius:10px;background-color: black;" type="tel"
+                    placeholder="Your Mobile">
+                <div id="editgender"
+                    style="color: black;display: flex;flex-direction: row;justify-content: center;align-items:center;gap:100px;;background-color: black;">
+                    <h3>Gender</h3>
+                    <div>
+                        <label style="color: white;font-size:20px;" for="male">Male</label>
+                        <input type="radio" name="genderformname" value="Male">
+                    </div>
+                    <div>
+                        <label style="color: white;font-size:20px;" for="female">Female</label>
+                        <input type="radio" name="genderformname" value="Female">
+                    </div>
+
+                </div>
+                <input id="editdate" style="color: white;border:1px solid white;width:80%;padding:8px;border-radius:10px;background-color: black;" type="date"
+                    placeholder="Date Of Birth">
+                <textarea id="editaddress" style="color: white;border:1px solid white;width:80%;padding:8px;border-radius:10px;background-color: black;"
+                    placeholder="Enter Your Address"></textarea>
+                <div id="editsavebtn"
+                    style="padding:10px 30px;background-color:black;border-radius:20px;font-size:20px;cursor: pointer;box-shadow:2px 1px 10px 2px grey;"
+                    id="editsavebtn">Save</div>
+            </div>
+        </div>
+
+
+
+    </header><!-- #header -->
+    <!-- Modal -->
+    <div class="modal fade" id="yourbookingsmodel" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color: black;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle" >Your Bookings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;gap:20px;width:100%;" id="moviehistory">
+                                                
+                    </div>
+                </div>
+                <div class="modal-footer" style="display:flex;justify-content:center;align-items:center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-area section-gap">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>About Agency</h6>
+                        <p>
+                            The world has become so fast paced that people don't want to stand by reading a page of
+                            information, they would much rather look at a presentation and understand the message. It
+                            has come to a point
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Navigation Links</h6>
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Feature</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Newsletter</h6>
+                        <p>
+                            For business professionals caught between high OEM price and mediocre print and graphic
+                            output.
+                        </p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="subscription relative">
+                                <div class="input-group d-flex flex-row">
+                                    <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                    <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>
+                                </div>
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget mail-chimp">
+                        <h6 class="mb-20">InstaFeed</h6>
+                        <ul class="instafeed d-flex flex-wrap">
+                            <li><img src="img/i1.jpg" alt=""></li>
+                            <li><img src="img/i2.jpg" alt=""></li>
+                            <li><img src="img/i3.jpg" alt=""></li>
+                            <li><img src="img/i4.jpg" alt=""></li>
+                            <li><img src="img/i5.jpg" alt=""></li>
+                            <li><img src="img/i6.jpg" alt=""></li>
+                            <li><img src="img/i7.jpg" alt=""></li>
+                            <li><img src="img/i8.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                <p class="col-lg-8 col-sm-12 footer-text m-0">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
+                    made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                        target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script>
+        var email = localStorage.getItem("currentLoginUser");
+        var owneremail = localStorage.getItem(email);
+        if (email != null && email != 1) {
+            $("#regButton").css("display", "none");
+            $("#profileButtonMain").css("display", "block");
+        }
+        else {
+            $("#regButton").css("display", "block");
+            $("#profileButtonMain").css("display", "none");
+        }
+        if (email == "admin@gmail.com") {
+            $("#adminButton").css("display", "block");
+        }
+        else {
+            $("#adminButton").css("display", "none");
+        }
+        if (owneremail == null) {
+            $("#theatreButton").css("display", "none");
+        }
+        else {
+            $("#theatreButton").css("display", "block");
+        }
+        $("#signout").click(() => {
+            localStorage.setItem("currentLoginUser", 1);
+            window.location.href = "index.html"
+        })
+    </script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="myjs/common.js"></script>
+    <script src="myjs/profile.js"></script>
+</body>
+
+</html>

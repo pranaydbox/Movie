@@ -1,0 +1,54 @@
+body{
+    background-color: white;
+}
+table{
+    margin-top:3%;
+}
+
+th{
+    font-size: 20px;
+}
+label{
+    color: black;
+    font-size: 15px;
+}
+table,tr,td,th{
+    border-collapse: collapse;
+}
+td{
+    font-size: large;
+}
+
+.mult-select-tag .wrapper {
+    width: 102%;
+}
+input{
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 2px solid black;
+    width: 75%;
+    margin: 2px;
+}
+textarea{
+    border-radius: 20px;
+    font-size: 15px;
+    border: 2px solid black;
+}
+select{
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 2px solid black;
+    color: rgb(104, 101, 101);
+    background-color: white;
+    width: 75%;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
